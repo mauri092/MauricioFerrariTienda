@@ -1358,22 +1358,23 @@ footer p{
         font-family: 'Oswald', sans-serif;
         letter-spacing: 1.5px;
         width: 50%;
-        height: 300px;
+        height: 50%;
         background-color: rgba(0, 0, 0, 0.507);
         float: right;
         padding: 20px;
-        margin: 30px;
+        margin: 20px;
         border-radius: 20px;
     }
     .call h1{
+        font-size: 25px;
         color: rgb(49, 87, 11);
         margin-bottom: 10px;
         text-shadow: 0 0 5px black;
         text-transform: uppercase;
     }
     .call p{
-        font-size: 24px;
-        margin-bottom: 50px;
+        font-size: 20px;
+        margin-bottom: 25px;
     }
     .call a{
         background-color: black;
