@@ -4,67 +4,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CONTACTO</title>
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="shortcut icon" href="../images/icon-moto.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../styles.css">
-    <link rel="shortcut icon" href="images/icon-moto.png">
+    <title>Contacto</title>
 </head>
 <body>
-    <header>
-        <div class="logo">Molinari <span>Motos</span></div>
-        <nav class="barra">
-            <ul>
-               <li><a href="../index.html">inicio</a></li>
-               <li><a href="../pages/mecanica.html">mecanica</a></li>
-               <li><a href="../pages/repuestos.html">repuestos</a></li>
-               <li><a href="../pages/accesorios.html">accesorios</a></li>
-               <li><a href="../pages/contacto.html">contacto</a></li>
-            </ul>
-        </nav>
-       </header>
-    
-    
-    <main>
-        <div class="eslogan1">
-            <h2>contacto</h2>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <!-- Brand -->
+        <a class="navbar-brand" href="../index.html">Molinari <span>Motos</span></a>
+      
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mecanica.html">mecanica</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="repuestos.html">repuestos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="accesorios.html">accesorios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">contacto</a>
+            </li>
+          </ul>
         </div>
-    
-    <div class="contacto">
-        <h1 class="mensaje">Mensaje</h1>
-    <section class="formulario">
-        <div><form action="enviar.php" method="post" enctype="text/plain">
-        <label for="names" >Nombre</label><br>
-        <input id="names" name="names" type="text" placeholder="Nombre" >
-        <br><br>
-
-        <label for="email">Correo electronico</label><br>
-        <input id="email" name="email" type="email" placeholder="correo electronico" required><br><br>
-
-        <label for="cell">Celular</label> <br>
-        <input id="cell" name="cell" type="number" placeholder="Telefono" ><br><br>
-
-        <label for="">Consulta</label><br>
-        <textarea name="text-area" id="text-area" cols="30" rows="10"
-        placeholder="escribe tu mensaje"></textarea ><br>
-
-        <input class="enviar" type="submit" value="Enviar mensaje">
-        <input class="borrar" type="reset" value="borrar">
-        </form></div>
-    </section>
-        </div>    
-    
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3347.0254336427347!2d-60.66085238451207!3d-32.97673078091228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab9bcb6a7bdf%3A0x9c05bb407ce263c6!2sMolinari%20Motos!5e0!3m2!1ses-419!2sar!4v1663882672283!5m2!1ses-419!2sar" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></map>
-
-    </main>
-</body>
-<footer>
-    <p><i class="fa-regular fa-copyright"></i> Todos los derechos reservados por copyright</p>
-    <div class="redes">
-        <a class="w" href=""><i class="fa-brands fa-whatsapp"></i></a>
-        <a class="f" href="https://www.facebook.com/Molinari-MOTOS-554851641350105/?ref=page_internal"><i class="fa-brands fa-facebook"></i></a>
-        <a class="ig" href="https://www.instagram.com/molinarimotos/"><i class="fa-brands fa-instagram"></i></a>
+    </nav>
+    <div class="jumbotron">
+      <h3 class="container">Contacto</h3>
+      <p>escribinos tu consulta</p>
     </div>
-</footer>
+
+    <div class="contacto">
+        <div class="nombre form-group container col-sm-8 col-md-7">
+            <label for="usr">Nombre:</label>
+            <input type="text" class="form-control" id="usr">
+        </div>
+        <div class="form-group container col-sm-8 col-md-7">
+            <label for="usr">E-mail:</label>
+            <input type="email" class="form-control" id="usr">
+        </div>
+        <div class="form-group container col-sm-8 col-md-7">
+            <label for="usr">Telefono de contacto:</label>
+            <input type="number" class="form-control" id="usr">
+        </div>
+        <div class="comentarios form-group container col-sm-8 col-md-7">
+            <label for="comment">Comentarios:</label>
+            <textarea class="form-control" rows="7" id="comment"></textarea>
+            <button id="btncontacto" type="submit" class="btn btn-primary mb-2">Enviar</button>
+        </div>
+        
+    </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3347.0254336427347!2d-60.66085238451207!3d-32.97673078091228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab9bcb6a7bdf%3A0x9c05bb407ce263c6!2sMolinari%20Motos!5e0!3m2!1ses-419!2sar!4v1663882672283!5m2!1ses-419!2sar" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></map>
+    <footer>
+        <marquee behavior="scroll" direction="right">
+            <p><i class="fa-regular fa-copyright"></i> todos los derechos reservados por copyright</p>
+        </marquee>
+        <div class="redes">
+            <a class="f" href=""><i class="fa-brands fa-facebook"></i></a>
+            <a class="ig" href=""><i class="fa-brands fa-instagram"></i></a>
+            <a class="w" href=""><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+</body>
 </html>

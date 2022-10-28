@@ -422,71 +422,102 @@ table tr td{
  /* ================================================MECANICA ===============================================  */
 
 
-
-.eslogan1{
-    width: 100%;
-    color: rgb(255, 255, 255);
-    background-color: rgb(255, 255, 255);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    letter-spacing: 0.5;
-    text-align: center;
-    padding: 20px;
+ .navbar{
+    display: flex;
+    font-family: 'Oswald', sans-serif;
 }
-.contenido3{
-    height: auto;
-    width: 100%;
-    background-color: rgb(70, 69, 69);
-    background-color: rgb(78, 99, 74, 0.274);
-}
-.articulo{
-    width: 55%;
-    height: auto;
-    border: 0px solid black;
-    background-color: rgb(0, 0, 0, 0.5);
-    display: inline-block;
-    margin-left: 250px;
-    margin-block: 40px;
-}
-.articulo h3{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.navbar-brand{
+    font-size: 30px;
     color: #fff;
-    background-color: rgb(49, 87, 11);
+    text-shadow: 0 0 5px rgb(0, 0, 0);
+    padding: 5px;
+}
+.navbar-brand span{
+    color: rgb(8, 152, 8);
+}
+.navbar-toggler{
+    background-color:rgba(0, 0, 0, 0.4);
+}
+#collapsibleNavbar{
+    justify-content: flex-end;
+}
+.nav-link{
+    color: #fff !important;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-inline-start: 10px;
+    text-shadow: 0 0 5px black;
+}
+
+.servicios{
+    
+    color: #fff;
+    text-shadow: 0 0 5px black;
+    background-color: rgba(0, 0, 0, 0.5);
     text-align: center;
+    margin:5px;
+    font-family: 'Oswald', sans-serif;
+    padding: 5px;
+    padding-bottom: 10px;
+}
+.fondomecanica{
+    background-color: #fff;
+    background-image: linear-gradient(rgba(179, 175, 175, 0.724), rgba(203, 196, 196, 0.726)), url(images/Raskrasil.com-motorcycles-22.png);
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.serv{
+    background-color: rgba(255, 255, 255, 0.6);
+    height: auto;
+    padding: 0;
+}
+.serv h3{
+    color: #fff;
+    background-color: darkgreen;
+    text-align: center;
+    padding: 10px;
     text-decoration: underline;
+    font-weight: bold;
+    font-size: 20px;
     text-transform: uppercase;
-    padding: 15px; 
+    text-shadow: 0 0 5px black;
 }
-.contenido3{
-    display: inline-block;
-}
-.full img{
-    height: 300px;
-    width: auto;
-    border: 4px solid rgba(0, 0, 0, 0.507);
-    margin:30px 70px 10px 30px ;
-    float: left; 
+.serv img{
+    height: 280px;
+    margin: 20px;
+    margin-left: 40px;
+    border: 3px solid rgba(255, 255, 255, 0.487);
 }
 .lista{
-    font-size: 20px;
-    color: #fff;
-    margin-left: 0px;
-    padding: 40px 40px 10px 40px;
-    padding-bottom: 20;
+    margin-left: 70px;
+    margin-top: 20px;
+    text-shadow: 0 0 0px black ;
 }
-.parrafo1{
-    font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #fff;
-    float: left;
-    padding: 30px;   
-}
-.parrafo2{
-    font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #fff;
-    float: left;
+.serv p{
     padding: 20px;
+    font-size:18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+.serv2{
+    margin-top: 50px;
+}
+.masinfo{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+.btn{
+    background-color: rgba(0, 0, 0, 0.45);
+    color: #fff;
+}
+.btn:hover{
+    background-color: #fff;
+}
+
+
 
 
 
@@ -594,62 +625,49 @@ table tr td{
 
  /* ================================================CONTACTO ===============================================  */
 
-
-
-
-.contacto{
-    background-color: rgba(78, 99, 74, 0.274);
-    margin-top: 0;
-    height: 650px
-   
+.jumbotron{
+    background-image: linear-gradient(rgba(179, 175, 175, 0.407), rgba(203, 196, 196, 0.413)), url(images/rutafondo.png);
+    background-size: cover;
+    background-position:center;
 }
-.mensaje{
-    padding: 30px;
-    text-decoration: underline;
-    text-shadow: 2px 2px 5px #fff;
+.jumbotron h3{
     text-align: center;
-    
+    color:rgba(51, 51, 51, 0.371);
+    font-size: 40px;
+    text-shadow: 0 0 2px rgb(112, 110, 110);
+    text-decoration: underline;
+    padding-top: 20px;
+    padding-bottom: 30px;
 }
-.formulario{
-    width: 650px;   
-    margin: 0 auto;
-    font-size: 20px;
-    font-family: 'Oswald', sans-serif;;
-    padding-bottom: 20px;
-    border: 3px solid black;
-    border-radius: 10px; 
-    padding-left: 20px;   
-    display: flex;
-   
+.jumbotron p{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.555);
+    padding-top: 10px;
+    letter-spacing: 1px;
+    text-shadow: 0 0 3px #fff;
+    font-family: 'Oswald', sans-serif;
 }
-#names{
-    height: 30px;
-    width: 550px;   
+
+
+.form-group{
+    font-weight: bold;
 }
-#email{
-    height: 30px;
-    width: 550px;
+.contacto{
+    height: auto;
 }
-#cell{
-    height: 30px;
-    width: 550px;
+.nombre{
+    margin-top: 50px;
 }
-#text-area{
-    width: 550px;
+#btncontacto{
+    margin-top: 10px;
+    margin-bottom: 50px;
+    width: 200px;
+    background-color: rgba(0, 0, 255, 0.801);
 }
-.enviar{
-    color: #fff;
-    font-size: 20px;
-    background-color: rgb(13, 13, 218);
-    border-radius: 5px;
-    padding: 5px;
-}
-.borrar{
-    font-size: 20px;
-    color: #000;
-    background-color: #fff;
-    border-radius: 5px;
-    padding: 5px;
+.comentarios{
+    margin-bottom: 50px;
 }
 
 
@@ -660,27 +678,25 @@ table tr td{
 
 
 
-
 footer{
-    height: 130px;
-    width: auto;
-    background-color: rgb(17, 17, 16);
+    background-color: rgba(0, 0, 0, 0.818);
+    text-align: center;
 }
 footer p{
-    color: #fff;
-    font-size: 24px;
+    font-size: 25px;
     font-family: 'Oswald', sans-serif;
-    text-align: center;
-    padding: 20px;
+    letter-spacing: 1px;
+    color: #fff;
+    padding-top: 5px;
 }
 .redes{
     font-size: 40px;
-    text-align: center;
+    letter-spacing: 20px;
+    padding-bottom: 15px;
 }
 .redes a{
-    padding: 10px;
-    color: #fff;
-    margin: 10px;
+    color:#fff;
+    text-shadow: 0 0 5px black;
 }
 .redes .w:hover{
     color:rgb(49, 87, 11) ;
@@ -745,8 +761,6 @@ footer p{
         left: -50%;
         transition: .5s;
     }
-   
-       
     .barra ul li {
         height: 10%;
         display:block ;
