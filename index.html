@@ -6,117 +6,206 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" href="images/icon-moto.png" type="image/x-icon">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <title>MOLINARI MOTOS</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>MolinariMotos</title>
 </head>
 <body>
-    <header>
-        <a href="#" class="enlace" >   
-            <div class="logo">Molinari <span>Motos</span></div></a>
-        <!-- <div class="logo">Molinari <span>Motos</span></div> -->
-        <input type="checkbox" id="check" >
-        <label for="check" class="checkbtn" >
-            <i class="fa-sharp fa-solid fa-bars"></i>
-        </label>
-        
-        <nav class="barra">
-            <ul class="barra-desplegable" >
-                <li><a href="index.html">inicio</a></li>
-                <li><a href="pages/mecanica.html">mecanica</a></li>
-                <li><a href="pages/repuestos.html">repuestos</a></li>
-                <li><a href="pages/accesorios.html">accesorios</a></li>
-                <li><a href="pages/contacto.html">contacto</a></li>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <!-- Brand -->
+        <a class="navbar-brand" href="../index.html">Molinari <span>Motos</span></a>
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/mecanica.html">mecanica</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/repuestos.html">repuestos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/accesorios.html">accesorios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/contacto.html">contacto</a>
+                </li>
             </ul>
-        </nav>
-    </header>
-    <main>
-    <div class="inicio">
-        <div class="eslogan">
-            <h1>Casa de repuestos & Mecanica</h1>
-            <p>Tu lugar de confianza</p>
         </div>
-        <div class="call">
-            <h1>conocenos</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio laboriosam reprehenderit id ea, amet recusandae tempora atque illo nesciunt quis.</p>
-            <a href="./pages/galery/galeria.html">Mas info</a>
-        </div>
-    </div>
-    <div class="sombra">
-        <h2>Productos destacados</h2>
-        <section class="descatados">
-            
-            <div class="galeria1">
-                <div data-aos="zoom-in-up" class="product11">
-                    <a href="pages/repuestos.html"> <img src="images/repuestos/otros repuestos/aceite-motul-moto-4tiempos.jpg" alt="">
-                    <div class="produc1__descripcion">
-                        <h3 class="product1__titulo">aceite</h3>
-                        <p>para todos los modelos y cc</p>
-                    </div>
-                </div></a>
-                <div data-aos="zoom-in-up" class="product12">
-                    <a href="pages/accesorios.html"> <img src="images/iluminacion/h4.jpg" alt="">
-                    <div class="produc1__descripcion">
-                        <h3 class="product1__titulo">halogena h4</h3>
-                        <p>todos los modelos</p>
-                    </div>
-                </div></a>
-                <div data-aos="zoom-in-up" class="product13">
-                    <a href="pages/accesorios.html"> <img src="images/cascos/Casco-Hawk-721-Gris.jpg" alt="">
-                    <div class="produc1__descripcion">
-                        <h3 class="product1__titulo">Hawk 721</h3>
-                        <p>consultar talles disponibles</p>
-                    </div>
-                </div></a>   
+    </nav>
+    <!-- carrusel -->
+    <div id="demo" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/carrusel/foto1.jpg" alt="imagen" height="700">
+                <div class="carousel-caption">
+                    <h3>Casa de repuestos & Mecanica</h3>
+                    <p>Tu lugar de confianza</p>
+                </div>   
             </div>
-            <div class="horarios">
-                <div class="container">
-                    <h2>Hover Rows</h2>
-                    <p>The .table-hover class enables a hover state (grey background on mouse over) on table rows:</p>            
-                    <table class="table table-hover">
-                    <thead>
-                        <tr>
-                            <th>Firstname</th>
-                            <th>Firstname</th>
-                            <th>Firstname</th>
-                            <th>Firstname</th>
-                            <th>Firstname</th>
-                            <th>Firstname</th>
-                            <th>Firstname</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>9:00 - 12:30</td>
-                            <td>9:00 - 12:30</td>
-                            <td>9:00 - 12:30</td>
-                            <td>9:00 - 12:30</td>
-                            <td>9:00 - 12:30</td>
-                            <td>9:00 - 12:30</td>
-                            <td>9:00 - 12:30</td>
-                        
-                        </tr>
-                        <tr>
-                            <td>16:00 - 19:30</td>
-                            <td>16:00 - 19:30</td>
-                            <td>16:00 - 19:30</td>
-                            <td>16:00 - 19:30</td>
-                            <td>16:00 - 19:30</td>
-                            <td>16:00 - 19:30</td>
-                            <td>16:00 - 19:30</td>
-                        </tr>
-                        
-                    </tbody>
-                    </table>
+            <div class="carousel-item">
+                <img src="images/carrusel/foto2.png" alt="imagen" height="700">
+                <div class="carousel-caption">
+                    <h3>Casa de repuestos & Mecanica</h3>
+                    <p>Tu lugar de confianza</p>
+                </div>   
+            </div>
+            <div class="carousel-item">
+                <img src="images/carrusel/foto3.jpg" alt="imagen" height="700">
+                <div class="carousel-caption">
+                    <h3>Casa de repuestos & Mecanica</h3>
+                    <p>Tu lugar de confianza</p>
+                </div>   
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+    <div class="conocenos">
+        <aside class="info">
+            <h2>conocenos</h2>
+            <p class="container">Cuidar tu moto es cuidar tu propia seguridad así que no hay excusa para que siempre la tengas en perfecto estado y nosortos nos encargamos de cada detalle de que cada cliente se vaya satisfecho con el trabajo realizado. En MOLINARI MOTOS nos preocupamos porque te vayas conforme con su visita por nuestro local, podes traer tu moto con total confianza y garantia asegurada.</p>
+            <section class="masinfo">
+                <div>
+                    <a href="./pages/galery/galeria.html">Mas info</a>
+                </div>
+            </section>
+        </aside>
+    </div>
+    <!-- productos destacados -->
+    <div class="destacados-titulo">
+        <h2>Destacados del mes</h2>
+    </div>
+    <section>
+        <div class="destacados-galeria">
+            <div data-aos="zoom-in-up" class="card" style="width:320px">
+                <img class="card-img-top" src="images/repuestos/otros repuestos/aceite-motul-moto-4tiempos.jpg" alt="Card image" data-toggle="modal" data-target="#myModal">
+                <div class="card-body">
+                    <h4 class="card-title">Aceite Motul</h4>
+                    <p class="card-text">consultar stock.</p>
+                    <a href="#" class="btn btn-primary">Ver articulo</a>
                 </div>
             </div>
-        </section>
-    </div>   
-        <div class="subir">
-            <a href=""><i class="fa-solid fa-caret-up"></i></a>
+            <div data-aos="zoom-in-up" class="card" style="width:320px">
+                <img class="card-img-top" src="images/iluminacion/h4.jpg" alt="Card image" data-toggle="modal" data-target="#myModal2">
+                <div class="card-body">
+                    <h4 class="card-title">Halogena H4</h4>
+                    <p class="card-text">consultar stock.</p>
+                    <a href="#" class="btn btn-primary">Ver articulo</a>
+                </div>
+            </div>
+            <div data-aos="zoom-in-up" class="card" style="width:320px">
+                <img class="card-img-top" src="images/repuestos/otros repuestos/transmision.jpg" height="320" alt="Card image" data-toggle="modal" data-target="#myModal3">
+                <div class="card-body">
+                    <h4 class="card-title">Kit de transmision</h4>
+                    <p class="card-text">consultar stock.</p>
+                    <a href="#" class="btn btn-primary">Ver articulo</a>
+                </div>
+            </div>
         </div>
-    </main>
+    </section>
+    <!-- modal -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <!-- Modal body -->
+                <div class="modal-body">
+                    <img src="images/repuestos/otros repuestos/aceite-motul-moto-4tiempos.jpg" alt="producto">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <!-- Modal body -->
+                <div class="modal-body">
+                    <img src="images/iluminacion/h4.jpg" alt="producto">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal3">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <!-- Modal body -->
+                <div class="modal-body">
+                    <img src="images/repuestos/otros repuestos/transmision.jpg" alt="producto">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- tabla de horarios -->
+    <div class="horarios">
+        <div class="container">
+            <h2>Nuestros Horarios</h2>
+            <p>Acercate a nuestra sucursal en los horarios de comercio</p>            
+            <table class="table table-hover col-sm-12">
+            <thead>
+                <tr>
+                    <th>Lunes</th>
+                    <th>martes</th>
+                    <th>Miercoles</th>
+                    <th>Jueves</th>
+                    <th>Viernes</th>
+                    <th>Sabado</th>
+                    <th>Domingo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>9:00 - 12:30</td>
+                    <td>9:00 - 12:30</td>
+                    <td>9:00 - 12:30</td>
+                    <td>9:00 - 12:30</td>
+                    <td>9:00 - 12:30</td>
+                    <td>9:00 - 12:30</td>
+                    <td>cerrado</td>
+                
+                </tr>
+                <tr>
+                    <td>16:00 - 19:30</td>
+                    <td>16:00 - 19:30</td>
+                    <td>16:00 - 19:30</td>
+                    <td>16:00 - 19:30</td>
+                    <td>16:00 - 19:30</td>
+                    <td>cerrado</td>
+                    <td>cerrado</td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+    </div>    
+    <div class="horarios2"> 
+        <div class="hsmobile">
+            <div class="lav">
+                <h5>lunes a viernes</h5>
+                <p>9:00 / 12:30 hs</p>
+                <p>16:00 / 19:30 hs</p>
+            </div>
+            <div class="sdo">
+                <h5>sabado</h5>
+                <p>9:00 / 13:00 hs</p>
+            </div>    
+        </div>
+    </div>   
+    <!-- footer -->
     <footer>
         <marquee behavior="scroll" direction="right">
             <p><i class="fa-regular fa-copyright"></i>todos los derechos reservados por copyright</p>
