@@ -3,7 +3,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
  /* ================================================INICIO ===============================================  */
@@ -207,7 +207,7 @@ tbody{
 .nright p{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
-    text-shadow: 0 0 5px white;
+    color:rgb(255, 255, 255);
     margin: 70px 10px;
     padding: 0 20px;
     text-align: center;
@@ -617,9 +617,6 @@ footer p{
     background-position:bottom;
     padding-top: 50px;
     padding-bottom: 50px;
-}
-.serv{
-    margin: 5px;
 }
 .serv img{
     height: 200px;
