@@ -4,146 +4,226 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../styles.css">
-    <link rel="shortcut icon" href="../images/icon-moto.png">
-    <title>REPUESTOS</title>
+    <title>Repuestos</title>
 </head>
 <body>
-    
-    <header>
-        <div class="logo">Molinari <span>Motos</span></div>
-        <nav class="barra">
-            <ul>
-               <li><a href="../index.html">inicio</a></li>
-               <li><a href="../pages/mecanica.html">mecanica</a></li>
-               <li><a href="../pages/repuestos.html">repuestos</a></li>
-               <li><a href="../pages/accesorios.html">accesorios</a></li>
-               <li><a href="../pages/contacto.html">contacto</a></li>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <!-- Brand -->
+        <a class="navbar-brand" href="../index.html">Molinari <span>Motos</span></a>
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="mecanica.html">mecanica</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="repuestos.html">repuestos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="accesorios.html">accesorios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">contacto</a>
+                </li>
             </ul>
-        </nav>
-       </header>
-    
+        </div>
+    </nav>
+    <div class="destacados-titulo">
+        <h2>Repuestos de motor</h2>
+    </div>
+    <div class="sec1 container-fluid">
+        <section class="repuestos">
+            <div data-aos="zoom-in-up" class="card" style="width:280px">
+                <img class="card-img-top" src="../images/repuestos/bujia.jpg" alt="Card image">
+                <div class="card-body">
+                    <h4 class="card-title">Bujia</h4>
+                    <p class="card-text">consultar stock.</p>
+                    <a href="#" class="btn btn-primary">Ver articulo</a>
+                </div>
+            </div>
+            <div data-aos="zoom-in-up" class="card" style="width:280px">
+                <img class="card-img-top" src="../images/repuestos/carburador.jpg" alt="Card image" data-toggle="modal" data-target="#myModal">
+                <div class="card-body">
+                    <h4 class="card-title">Carburador</h4>
+                    <p class="card-text">consultar stock.</p>
+                    <a href="#" class="btn btn-primary">Ver articulo</a>
+                </div>
+            </div>
+            <div data-aos="zoom-in-up" class="card" style="width:280px">
+                <img class="card-img-top" src="../images/repuestos/disco-em.jpg" alt="Card image" data-toggle="modal" data-target="#myModal">
+                <div class="card-body">
+                    <h4 class="card-title">Discos embrague</h4>
+                    <p class="card-text">consultar stock.</p>
+                    <a href="#" class="btn btn-primary">Ver articulo</a>
+                </div>
+            </div>
+            <div data-aos="zoom-in-up" class="card" style="width:280px">
+                <img class="card-img-top" src="../images/repuestos/juntas110.jpg" alt="Card image" data-toggle="modal" data-target="#myModal">
+                <div class="card-body">
+                    <h4 class="card-title">Juego de juntas</h4>
+                    <p class="card-text">consultar stock.</p>
+                    <a href="#" class="btn btn-primary">Ver articulo</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="sec2 container-fluid">
+        <section class="repuestos">
+            <div data-aos="zoom-in-up" class="card" style="width:280px">
+                <img class="card-img-top" src="../images/repuestos/kitPiston.jpg" alt="Card image" data-toggle="modal" data-target="#myModal">
+                <div class="card-body">
+                    <h4 class="card-title">Kit de piston</h4>
+                    <p class="card-text">consultar stock.</p>
+                    <a href="#" class="btn btn-primary">Ver articulo</a>
+                </div>
+            </div>
+            <div data-aos="zoom-in-up" class="card" style="width:280px">
+                <img class="card-img-top" src="../images/repuestos/tapaCilindro.jpg" alt="Card image" data-toggle="modal" data-target="#myModal">
+                <div class="card-body">
+                    <h4 class="card-title">Tapa de cilindro</h4>
+                    <p class="card-text">consultar stock.</p>
+                    <a href="#" class="btn btn-primary">Ver articulo</a>
+                </div>
+            </div>
+            <div data-aos="zoom-in-up" class="card" style="width:280px">
+                <img class="card-img-top" src="../images/repuestos/2104201812498862_01_medium.jpg" alt="Card image" data-toggle="modal" data-target="#myModal">
+                <div class="card-body">
+                    <h4 class="card-title">burro de arranque</h4>
+                    <p class="card-text">consultar stock.</p>
+                    <a href="#" class="btn btn-primary">Ver articulo</a>
+                </div>
+            </div>
+            <div data-aos="zoom-in-up" class="card" style="width:280px">
+                <img class="card-img-top" src="../images/repuestos/centrifugo.jpg" alt="Card image" data-toggle="modal" data-target="#myModal">
+                <div class="card-body">
+                    <h4 class="card-title">centrifugo</h4>
+                    <p class="card-text">consultar stock.</p>
+                    <a href="#" class="btn btn-primary">Ver articulo</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="destacados-titulo">
+        <h2>Otros repuestos</h2>
+    </div>
+    <div class="sec1 container-fluid">
+        <section class="repuestos">
+            <div data-aos="zoom-in-up" class="card" style="width:280px">
+                <img class="card-img-top" src="../images/repuestos/otros repuestos/aceite-motul-moto-4tiempos.jpg" alt="Card image" data-toggle="modal" data-target="#myModal">
+                <div class="card-body">
+                    <h4 class="card-title">Aceite Motul</h4>
+                    <p class="card-text">consultar stock.</p>
+                    <a href="#" class="btn btn-primary">Ver articulo</a>
+                </div>
+            </div>
+            <div data-aos="zoom-in-up" class="card" style="width:280px">
+                <img class="card-img-top" src="../images/repuestos/otros repuestos/cable-acelerador.jpg" alt="Card image" data-toggle="modal" data-target="#myModal">
+                <div class="card-body">
+                    <h4 class="card-title">cable acelerador</h4>
+                    <p class="card-text">consultar stock.</p>
+                    <a href="#" class="btn btn-primary">Ver articulo</a>
+                </div>
+            </div>
+            <div data-aos="zoom-in-up" class="card" style="width:280px">
+                <img class="card-img-top" src="../images/repuestos/otros repuestos/cable-embrague.jpg" alt="Card image" data-toggle="modal" data-target="#myModal">
+                <div class="card-body">
+                    <h4 class="card-title">cable embrague</h4>
+                    <p class="card-text">consultar stock.</p>
+                    <a href="#" class="btn btn-primary">Ver articulo</a>
+                </div>
+            </div>
+            <div data-aos="zoom-in-up" class="card" style="width:280px">
+                <img class="card-img-top" src="../images/repuestos/otros repuestos/camara.jpg" alt="Card image" data-toggle="modal" data-target="#myModal">
+                <div class="card-body">
+                    <h4 class="card-title">Camaras</h4>
+                    <p class="card-text">consultar stock.</p>
+                    <a href="#" class="btn btn-primary">Ver articulo</a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="sec2 container-fluid">
+        <section class="repuestos">
+            <div data-aos="zoom-in-up" class="card" style="width:280px">
+                <img class="card-img-top" src="../images/repuestos/otros repuestos/cinta-freno.jpg" alt="Card image" data-toggle="modal" data-target="#myModal">
+                <div class="card-body">
+                    <h4 class="card-title">Patines de freno</h4>
+                    <p class="card-text">consultar stock.</p>
+                    <a href="#" class="btn btn-primary">Ver articulo</a>
+                </div>
+            </div>
+            <div data-aos="zoom-in-up" class="card" style="width:280px">
+                <img class="card-img-top" src="../images/repuestos/otros repuestos/pastillas-freno.jpg" alt="Card image" data-toggle="modal" data-target="#myModal">
+                <div class="card-body">
+                    <h4 class="card-title">Pastillas de freno</h4>
+                    <p class="card-text">consultar stock.</p>
+                    <a href="#" class="btn btn-primary">Ver articulo</a>
+                </div>
+            </div>
+            <div data-aos="zoom-in-up" class="card" style="width:280px">
+                <img class="card-img-top" src="../images/repuestos/otros repuestos/transmision.jpg" alt="Card image" data-toggle="modal" data-target="#myModal">
+                <div class="card-body">
+                    <h4 class="card-title">Kit de transmision</h4>
+                    <p class="card-text">consultar stock.</p>
+                    <a href="#" class="btn btn-primary">Ver articulo</a>
+                </div>
+            </div>
+            <div data-aos="zoom-in-up" class="card" style="width:280px">
+                <img class="card-img-top" src="../images/repuestos/otros repuestos/filtro-aceite-300x300.jpg" alt="Card image" data-toggle="modal" data-target="#myModal">
+                <div class="card-body">
+                    <h4 class="card-title">filtro de aceite</h4>
+                    <p class="card-text">consultar stock.</p>
+                    <a href="#" class="btn btn-primary">Ver articulo</a>
+                </div>
+            </div>
+        </section>
+    </div>
 
-    
-    <main>
-        <div class="eslogan1">
-            <h2>Repuestos de motor</h2>
-        </div>
-    
-    
-        <section class="accesorios">
-            <div class="galeria3">
-                <div class="product2">
-                    <a href=""> <img src="../images/repuestos/tapaCilindro.jpg" alt=""> </a>
-                    <div class="produc2__descripcion">
-                        <h3 class="product2__titulo">tapa de cilindro</h3>
-                        <p>consultar modelos</p>
-                    </div>
-                </div>
-                <div class="product2">
-                    <a href=""> <img src="../images/repuestos/kitPiston.jpg" alt=""> </a>
-                    <div class="produc2__descripcion">
-                        <h3 class="product2__titulo">Kit Piston</h3>
-                        <p>consultar modelos</p>
-                    </div>
-                </div>
-                <div class="product2">
-                    <a href=""> <img src="../images/repuestos/carburador.jpg" alt=""> </a>
-                    <div class="produc2__descripcion">
-                        <h3 class="product2__titulo">carburador</h3>
-                        <p>consultar modelos</p>
-                    </div>
-                </div>
-                <div class="product2">
-                    <a href=""> <img src="../images/repuestos/disco-em.jpg" alt=""> </a>
-                    <div class="produc2__descripcion">
-                        <h3 class="product2__titulo">discos de embrague</h3>
-                        <p>todos los modelos</p>
-                    </div>
-                </div>
-                <div class="product2">
-                    <a href=""> <img src="../images/repuestos/juntas110.jpg" alt=""> </a>
-                    <div class="produc2__descripcion">
-                        <h3 class="product2__titulo">juego de juntas</h3>
-                        <p>todos los modelos</p>
-                    </div>
-                </div>
-                <div class="product2">
-                    <a href=""> <img src="../images/repuestos/bujia.jpg" alt=""> </a>
-                    <div class="produc2__descripcion">
-                        <h3 class="product2__titulo">bujias</h3>
-                        <p>todos los modelos</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <div class="eslogan1">
-            <h2>otros repuestos</h2>
-        </div>
-        <section class="accesorios">
-            
-            <div class="galeria3">
-                <div class="product2">
-                    <a href=""> <img src="../images/repuestos/otros repuestos/transmision.jpg" alt=""> </a>
-                    <div class="produc2__descripcion">
-                        <h3 class="product2__titulo">kit de transmision</h3>
-                        <p>todas las marcas y modelos</p>
-                    </div>
-                </div>
-                <div class="product2">
-                    <a href=""> <img src="../images/repuestos/otros repuestos/pastillas-freno.jpg" alt=""> </a>
-                    <div class="produc2__descripcion">
-                        <h3 class="product2__titulo">pastillas de freno</h3>
-                        <p>todas las marcas y modelos</p>
-                    </div>
-                </div>
-                <div class="product2">
-                    <a href=""> <img src="../images/repuestos/otros repuestos/cinta-freno.jpg" alt=""> </a>
-                    <div class="produc2__descripcion">
-                        <h3 class="product2__titulo">cinta de freno</h3>
-                        <p>todas las marcas y modelos</p>
-                    </div>
-                </div>
-                <div class="product2">
-                    <a href=""> <img src="../images/repuestos/otros repuestos/cable-embrague.jpg" alt=""> </a>
-                    <div class="produc2__descripcion">
-                        <h3 class="product2__titulo">cable embrague</h3>
-                        <p>todos los modelos</p>
-                    </div>
-                </div>
-                <div class="product2">
-                    <a href=""> <img src="../images/repuestos/otros repuestos/cable-acelerador.jpg" alt=""> </a>
-                    <div class="produc2__descripcion">
-                        <h3 class="product2__titulo">cable aelerador</h3>
-                        <p>todos los modelos</p>
-                    </div>
-                </div>
-                <div class="product2">
-                    <a href=""> <img src="../images/repuestos/otros repuestos/aceite-motul-moto-4tiempos.jpg" alt=""> </a>
-                    <div class="produc2__descripcion">
-                        <h3 class="product2__titulo">aceites</h3>
-                        <p>todas las marcas y cc</p>
-                    </div>
-                </div>
-                
-            </div>
-        </section>
-    
-    
-   
-</main>  
-    
-</body>
- <footer>
-        <p><i class="fa-regular fa-copyright"></i> Todos los derechos reservados por copyright</p>
-        <div class="redes">
+
+
+
+    <footer>
+        <marquee behavior="scroll" direction="right">
+            <p><i class="fa-regular fa-copyright"></i>todos los derechos reservados por copyright</p>
+        </marquee>
+        <nav class="redes">
             <a class="w" href=""><i class="fa-brands fa-whatsapp"></i></a>
             <a class="f" href="https://www.facebook.com/Molinari-MOTOS-554851641350105/?ref=page_internal"><i class="fa-brands fa-facebook"></i></a>
             <a class="ig" href="https://www.instagram.com/molinarimotos/"><i class="fa-brands fa-instagram"></i></a>
-        </div>
+        </nav>
     </footer>
-    <!-- <div class="subir">
-        <a href=""><i class="fa-solid fa-caret-up"></i></a>
-    </div> -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+</body>
 </html>

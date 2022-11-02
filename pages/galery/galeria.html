@@ -5,22 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../../styles.css">
-    <link rel="shortcut icon" href="../../images/icon-moto.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="shortcut icon" href="images/icon-moto.png" type="image/x-icon">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../styles.css">
     <title>GALERIA</title>
 </head>
 <body>
-    <header class="header">
-        <div class="logo">Molinari <span>Motos</span></div>
-        <nav class="barra-galeria">
-            <ul>
-               <li><a href="../../index.html">inicio</a></li>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <!-- Brand -->
+        <a class="navbar-brand" href="../index.html">Molinari <span>Motos</span></a>
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../../index.html">inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../mecanica.html">mecanica</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../repuestos.html">repuestos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../accesorios.html">accesorios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../contacto.html">contacto</a>
+                </li>
             </ul>
-        </nav>
-    </header>
+        </div>
+    </nav>
     <main>
-        <h1 class="tgaleria">informacion</h1>
+        <h2 class="tgaleria">informacion</h2>
     </main>
     <section class="nosotros">
         <aside class="nleft"></aside>
@@ -29,7 +50,7 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae error nobis doloribus eveniet porro excepturi quaerat fugit, nostrum distinctio ea, voluptatibus adipisci explicabo facilis voluptate tenetur accusamus. Voluptates, minima odio!</p>
         </aside>
     </section>
-    <h2 class="decorado" >nuestra <span>galeria</span></h2>
+    <h2 class="decorado">nuestra <span>galeria</span></h2>
     <section class="galeria" >
         <article data-aos="zoom-in" class="item item1"></article>
         <article data-aos="zoom-in" class="item item2"></article>
