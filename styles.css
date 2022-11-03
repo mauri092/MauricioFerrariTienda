@@ -1,797 +1,843 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    /* box-sizing: border-box; */
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
 }
 
- /* ================================================INICIO ===============================================  */
-
+/* ================================================INICIO ===============================================  */
 .carousel-inner img {
-    width: 100%;
-    height: 100%;
-}
-.carousel-caption{
-    position: absolute;
-    right: 15%;
-    bottom: 20px;
-    left: 15%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: #fff;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    margin-bottom: 100px;
-    margin: 0, auto;
-}
-.conocenos{
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-.info{
-    height: auto;
-    width: 100%;
-    background-color: rgba(51, 51, 51, 0.064);
-    padding-bottom: 20px;
-}
-.info h2{
-    text-align: center;
-    font-family: 'Oswald', sans-serif;
-    padding-top: 20px;
-}
-.info p{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-    padding: 20px;
-    font-weight: 500;
-}
-.masinfo{
-    text-align: center;
-}
-.masinfo a{
-    font-size: 20px;
-    padding: 5px;
-    background-color: rgba(0, 0, 0, 0.379);
-    border-radius: 10px;
-    color: #fff;
-}
-.masinfo a:hover{
-    background-color: rgb(81, 170, 13);
-    color: black;
-}
-.destacados-titulo h2{
-    background-color: rgba(51, 51, 51, 0.164);
-    text-align: center;
-    font-size: 30px;
-    letter-spacing: 1px;
-    text-shadow: 0 0 1px white;
-    text-decoration: underline;
-    font-weight: 400;
-    font-family: 'Oswald', sans-serif;
-    padding: 20px;
-    margin: 0;
-}
-.destacados-galeria{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-.card{
-    margin: 20px;
-}
-.card-body h4{
-    text-align: center;
-}
-.destacados-galeria .card img{
-    padding: 10px;
-    cursor: pointer;
-    height: 280px;
-    width: 280px;
-}
-.modal-content{
-    margin-top: 200px;
-    width: 550px;
-    height: 100%;
-}
-.horarios{
-    background-color: rgba(51, 51, 51, 0.064);
-    width: 100%;
-    padding: 20px;
-}
-.horarios h2{
-    text-align: center;
-    padding: 10px;
-}
-.horarios p{
-    text-align: center;
-    padding-bottom: 20px;
-    font-size: 20px;
-    padding-left: 0;
-}
-.table{
-    margin: 0;
-}
-thead{
-    padding: 5px;
-    padding-left: 0;
-    margin: 0;
-}
-thead tr th{
-    margin: 0;
-    padding: 0;
-}
-tbody{
-    margin: 0;
-    padding-left: 0;
-    padding: 5px;
-}
-.horarios2{
-    display: none;
-}
-.hsmobile{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding-top:10px ;
-    background-color: #fff;
-}
-.lav{
-    font-size: 18px;
-    text-align: center;
-}
-.lav p{
-    font-size: 18px;
-    margin: 0;
-    padding: 10px;
-}
-.sdo p{
-    padding-top: 10px;
-    font-size: 18px;
+  width: 100%;
+  height: 100%;
 }
 
- /* ================================================GALERIA ===============================================  */
-
-.decorado{
-    text-align: center;
-    font-size: 24px;
-    font-family: 'Oswald', sans-serif;
-    background-color: rgba(0, 0, 0, 0.363);
-    padding: 20px;
-    text-transform: uppercase;
-    text-shadow: 0 0 7px #fff;
-    color: #000;
-    margin: 0;
-}
-.decorado span{
-    color: #fff;
-    text-shadow: 0 0 7px black;
-}
-.tgaleria{
-    text-align: center;
-    background-color: #333;
-    font-family: 'Oswald', sans-serif;
-    color: #fff;
-    text-shadow: 0 0 5px black;
-    letter-spacing: 1px;
-    padding-bottom: 5px;
-    margin: 0;
-}
-.nosotros{
-    display: flex;
-    width: 100%;
-    height: 450px;
-    background-color: rgb(49, 87, 11, 0.290);
-}
-.nleft{
-    background-image: url(images/fotocalle2.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100%;
-    width: 100%;
-}
-.nright{
-    padding: 20px;
-    width: 100%;
-}
-.nright h3{
-    font-size: 30px;
-    text-transform: uppercase;
-    text-align: center;
-    font-family: 'Oswald', sans-serif;
-    margin-top: 20px;
-    text-decoration: underline;
-}
-.nright p{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-    color:rgb(0, 0, 0);
-    margin: 70px 10px;
-    padding: 0 20px;
-    text-align: center;
-}
-.galeria{
-    background-color: #333;
-    height: auto;
-    width: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: repeat(3, 200px);
-    grid-gap: 20px;
-    padding: 20px;
-}
-.item{
-    width: auto;
-    border: 2px solid #fff;
-}
-.item:hover{
-    transform: scale(1.50);
-    transition: all 0.5s;
-    filter:opacity(50%);
-}
-.item1{
-    background-image: url(images/imagenes-galeria/imagen1.jpg);
-    background-size: cover;
-    background-position: center;
-}
-.item2{
-    background-image: url(images/imagenes-galeria/imagen2.jpg);
-    background-size: cover;
-    background-position: center;
-}
-.item3{
-    background-image: url(images/imagenes-galeria/imagen5.jpg);
-    background-size: cover;
-    background-position: center;
-}
-.item4{
-    background-image: url(images/imagenes-galeria/imagen3.jpg);
-    background-size: cover;
-    background-position: center;
-}
-.item5{
-    background-image: url(images/imagenes-galeria/imagen9.jpg);
-    background-size: cover;
-    background-position: center;
-}
-.item6{
-    background-image: url(images/imagenes-galeria/imagen4.jpg);
-    background-size: cover;
-    background-position: center;
-}
-.item7{
-    background-image: url(images/imagenes-galeria/imagen7.jpg);
-    background-size: cover;
-    background-position: center;
-}
-.item8{
-    background-image: url(images/imagenes-galeria/imagen10.jpg);
-    background-size: cover;
-    background-position: center;
-}
-.item9{
-    background-image: url(images/imagenes-galeria/imagen8.jpg);
-    background-size: cover;
-    background-position: center;
-}
-.item10{
-    background-image: url(images/imagenes-galeria/imagen11.jpg);
-    background-size: cover;
-    background-position: center;
-}
-.item11{
-    background-image: url(images/imagenes-galeria/imagen12.jpg);
-    background-size: cover;
-    background-position: center;
-}
-.item12{
-    background-image: url(images/imagenes-galeria/imagen13.jpg);
-    background-size: cover;
-    background-position: center;
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 20px;
+  left: 15%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 100px;
+  margin: 0, auto;
 }
 
- /* ================================================MECANICA ===============================================  */
-
-.navbar{
-    display: flex;
-    font-family: 'Oswald', sans-serif;
-}
-.navbar-brand{
-    font-size: 30px;
-    color: #fff;
-    text-shadow: 0 0 5px rgb(0, 0, 0);
-    padding: 5px;
-}
-.navbar-brand span{
-    color: rgb(8, 152, 8);
-}
-.navbar-toggler{
-    background-color:rgba(0, 0, 0, 0.4);
-}
-#collapsibleNavbar{
-    justify-content: flex-end;
-}
-.nav-link{
-    color: #fff !important;
-    font-size: 20px;
-    letter-spacing: 1px;
-    margin-inline-start: 10px;
-    text-shadow: 0 0 5px black;
-}
-.servicios{
-    color: #fff;
-    text-shadow: 0 0 5px black;
-    background-color: rgba(0, 0, 0, 0.5);
-    text-align: center;
-    margin:5px;
-    font-family: 'Oswald', sans-serif;
-    padding: 5px;
-    padding-bottom: 10px;
-}
-.fondomecanica{
-    background-color: #fff;
-    background-image: linear-gradient(rgba(195, 194, 194, 0.553), rgba(203, 196, 196, 0.485)), url(images/Raskrasil.com-motorcycles-22.png);
-    background-size: cover;
-    background-position:center;
-    padding-top: 50px;
-    padding-bottom: 50px; 
-}
-.serv{
-    background-color: rgba(255, 255, 255, 0.6);
-    height: auto;
-    padding: 0;
-}
-.serv h3{
-    color: #fff;
-    background-color: darkgreen;
-    text-align: center;
-    padding: 10px;
-    text-decoration: underline;
-    font-weight: bold;
-    font-size: 20px;
-    text-transform: uppercase;
-    text-shadow: 0 0 5px black;
-}
-.serv img{
-    height: 280px;
-    margin: 20px;
-    margin-left: 40px;
-    border: 3px solid rgba(255, 255, 255, 0.569);
-}
-.lista{
-    margin-left: 70px;
-    margin-top: 20px;
-    text-shadow: 0 0 0px black ;
-}
-.serv p{
-    padding: 20px;
-    font-size:18px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.serv2{
-    margin-top: 50px;
-}
-.masinfo{
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    border-radius: 5px;  
-}
-.btnmecanica{
-    background-color: rgba(0, 0, 0, 0.45);
-    color: #fff;
-}
-.btnmecanica:hover{
-    background-color: #fff;
+.conocenos {
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
- /* ================================================REPUESTOS ===============================================  */
-
-.repuestos{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-evenly;
+.info {
+  height: auto;
+  width: 100%;
+  background-color: rgba(51, 51, 51, 0.064);
+  padding-bottom: 20px;
 }
-.repuestos .card{
-    padding: 10px 0;
-    
+.info h2 {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  padding-top: 20px;
 }
-.card img{
-    height: 250px;
-}
-.sec1{
-    padding-inline: 30px;
-    padding-top: 30px;
-}
-.sec2{
-    padding-inline: 30px;
-    padding-bottom: 30px;
-    padding-top: 15px;
-}
-.sec3{
-    padding: 30px;
+.info p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  padding: 20px;
+  font-weight: 500;
 }
 
- /* ================================================ACCESORIOS===============================================  */
+.masinfo {
+  text-align: center;
+}
+.masinfo a {
+  font-size: 20px;
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.379);
+  border-radius: 10px;
+  color: #fff;
+}
 
-.accesorios{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-.accesorios .card{
-    padding: 10px 0;
+.masinfo a:hover {
+  background-color: rgb(81, 170, 13);
+  color: black;
 }
 
- /* ================================================CONTACTO ===============================================  */
+.destacados-titulo h2 {
+  background-color: rgba(51, 51, 51, 0.164);
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 1px;
+  text-shadow: 0 0 1px white;
+  text-decoration: underline;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+  padding: 20px;
+  margin: 0;
+}
 
-.jumbotron{
-    background-image: linear-gradient(rgba(179, 175, 175, 0.407), rgba(203, 196, 196, 0.413)), url(images/rutafondo.png);
-    background-size: cover;
-    background-position:center;
+.destacados-galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
-.mensaje{
-    background-color: rgba(0, 0, 0, 0.353);
-    padding: 5px;
+
+.card {
+  margin: 20px;
 }
-.jumbotron h3{
-    text-align: center;
-    color:rgb(255, 255, 255);
-    font-size: 40px;
-    text-shadow: 0 0 5px rgb(0, 0, 0);
-    text-decoration: underline;
-    padding-top: px;
-    padding-bottom: px;
+
+.card-body h4 {
+  text-align: center;
 }
-.jumbotron p{
-    text-align: center;
-    font-size: 24px;
-    font-weight: 600;
-    color: rgba(0, 0, 0, 0.555);
-    letter-spacing: 1px;
-    text-shadow: 0 0 3px #fff;
-    font-family: 'Oswald', sans-serif;
+
+.destacados-galeria .card img {
+  padding: 10px;
+  cursor: pointer;
+  height: 280px;
+  width: 280px;
 }
-.form-group{
-    font-weight: bold;
+
+.modal-content {
+  margin-top: 200px;
+  width: 550px;
+  height: 100%;
 }
-.contacto{
-    height: auto;
+
+.horarios {
+  background-color: rgba(51, 51, 51, 0.064);
+  width: 100%;
+  padding: 20px;
 }
-.nombre{
-    margin-top: 50px;
+.horarios h2 {
+  text-align: center;
+  padding: 10px;
 }
-#btncontacto{
-    margin-top: 10px;
-    margin-bottom: 50px;
-    width: 200px;
-    background-color: rgba(0, 0, 255, 0.801);
+.horarios p {
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 20px;
+  padding-left: 0;
 }
-.comentarios{
-    margin-bottom: 50px;
+
+.table {
+  margin: 0;
+}
+
+thead {
+  padding: 5px;
+  padding-left: 0;
+  margin: 0;
+}
+
+thead tr th {
+  margin: 0;
+  padding: 0;
+}
+
+tbody {
+  margin: 0;
+  padding-left: 0;
+  padding: 5px;
+}
+
+.horarios2 {
+  display: none;
+}
+
+.hsmobile {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 10px;
+  background-color: #fff;
+}
+
+.lav {
+  font-size: 18px;
+  text-align: center;
+}
+.lav p {
+  font-size: 18px;
+  margin: 0;
+  padding: 10px;
+}
+
+.sdo p {
+  padding-top: 10px;
+  font-size: 18px;
+}
+
+/* ================================================GALERIA ===============================================  */
+.decorado {
+  text-align: center;
+  font-size: 24px;
+  font-family: "Oswald", sans-serif;
+  background-color: rgba(0, 0, 0, 0.363);
+  padding: 20px;
+  text-transform: uppercase;
+  text-shadow: 0 0 7px #fff;
+  color: #000;
+  margin: 0;
+}
+.decorado span {
+  color: #fff;
+  text-shadow: 0 0 7px black;
+}
+
+.tgaleria {
+  text-align: center;
+  background-color: #333;
+  font-family: "Oswald", sans-serif;
+  color: #fff;
+  text-shadow: 0 0 5px black;
+  letter-spacing: 1px;
+  padding-bottom: 5px;
+  margin: 0;
+}
+
+.nosotros {
+  display: flex;
+  width: 100%;
+  height: 450px;
+  background-color: rgba(49, 87, 11, 0.29);
+}
+
+.nleft {
+  background-image: url(images/fotocalle2.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+.nright {
+  padding: 20px;
+  width: 100%;
+}
+.nright h3 {
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  margin-top: 20px;
+  text-decoration: underline;
+}
+.nright p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  margin: 70px 10px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.galeria {
+  background-color: #333;
+  height: auto;
+  width: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, 200px);
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.item {
+  width: auto;
+  border: 2px solid #fff;
+}
+.item :hover {
+  transform: scale(1.5);
+  transition: all 0.5s;
+  filter: opacity(50%);
+}
+
+.item1 {
+  background-image: url(images/imagenes-galeria/imagen1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.item2 {
+  background-image: url(images/imagenes-galeria/imagen2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.item3 {
+  background-image: url(images/imagenes-galeria/imagen5.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.item4 {
+  background-image: url(images/imagenes-galeria/imagen3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.item5 {
+  background-image: url(images/imagenes-galeria/imagen9.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.item6 {
+  background-image: url(images/imagenes-galeria/imagen4.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.item7 {
+  background-image: url(images/imagenes-galeria/imagen7.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.item8 {
+  background-image: url(images/imagenes-galeria/imagen10.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.item9 {
+  background-image: url(images/imagenes-galeria/imagen8.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.item10 {
+  background-image: url(images/imagenes-galeria/imagen11.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.item11 {
+  background-image: url(images/imagenes-galeria/imagen12.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.item12 {
+  background-image: url(images/imagenes-galeria/imagen13.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+/* ================================================MECANICA ===============================================  */
+.navbar {
+  display: flex;
+  font-family: "Oswald", sans-serif;
+}
+
+.navbar-brand {
+  font-size: 30px;
+  color: #fff;
+  text-shadow: 0 0 5px rgb(0, 0, 0);
+  padding: 5px;
+}
+.navbar-brand span {
+  color: rgb(8, 152, 8);
+}
+
+.navbar-toggler {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+#collapsibleNavbar {
+  justify-content: flex-end;
+}
+
+.nav-link {
+  color: #fff !important;
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin-inline-start: 10px;
+  text-shadow: 0 0 5px black;
+}
+
+.servicios {
+  color: #fff;
+  text-shadow: 0 0 5px black;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  margin: 5px;
+  font-family: "Oswald", sans-serif;
+  padding: 5px;
+  padding-bottom: 10px;
+}
+
+.fondomecanica {
+  background-color: #fff;
+  background-image: linear-gradient(rgba(195, 194, 194, 0.553), rgba(203, 196, 196, 0.485)), url(images/Raskrasil.com-motorcycles-22.png);
+  background-size: cover;
+  background-position: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.serv {
+  background-color: rgba(255, 255, 255, 0.6);
+  height: auto;
+  padding: 0;
+}
+.serv h3 {
+  color: #fff;
+  background-color: darkgreen;
+  text-align: center;
+  padding: 10px;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-shadow: 0 0 5px black;
+}
+.serv img {
+  height: 280px;
+  margin: 20px;
+  margin-left: 40px;
+  border: 3px solid rgba(255, 255, 255, 0.569);
+}
+.serv p {
+  padding: 20px;
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.lista {
+  margin-left: 70px;
+  margin-top: 20px;
+  text-shadow: 0 0 0px black;
+}
+
+.serv2 {
+  margin-top: 50px;
+}
+
+.masinfo {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.btnmecanica {
+  background-color: rgba(0, 0, 0, 0.45);
+  color: #fff;
+}
+.btnmecanica :hover {
+  background-color: #fff;
+}
+
+/* ================================================REPUESTOS ===============================================  */
+.repuestos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.repuestos .card {
+  padding: 10px 0;
+}
+.repuestos .card img {
+  height: 250px;
+}
+
+.sec1 {
+  padding-inline: 30px;
+  padding-top: 30px;
+}
+
+.sec2 {
+  padding-inline: 30px;
+  padding-bottom: 30px;
+  padding-top: 15px;
+}
+
+.sec3 {
+  padding: 30px;
+}
+
+/* ================================================ACCESORIOS===============================================  */
+.accesorios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.accesorios .card {
+  padding: 10px 0;
+}
+
+/* ================================================CONTACTO ===============================================  */
+.jumbotron {
+  background-image: linear-gradient(rgba(179, 175, 175, 0.407), rgba(203, 196, 196, 0.413)), url(images/rutafondo.png);
+  background-size: cover;
+  background-position: center;
+}
+.jumbotron h3 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  text-shadow: 0 0 5px rgb(0, 0, 0);
+  text-decoration: underline;
+  padding-top: px;
+  padding-bottom: px;
+}
+.jumbotron p {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.555);
+  letter-spacing: 1px;
+  text-shadow: 0 0 3px #fff;
+  font-family: "Oswald", sans-serif;
+}
+
+.mensaje {
+  background-color: rgba(0, 0, 0, 0.353);
+  padding: 5px;
+}
+
+.form-group {
+  font-weight: bold;
+}
+
+.contacto {
+  height: auto;
+}
+
+.nombre {
+  margin-top: 50px;
+}
+
+#btncontacto {
+  margin-top: 10px;
+  margin-bottom: 50px;
+  width: 200px;
+  background-color: rgba(0, 0, 255, 0.801);
+}
+
+.comentarios {
+  margin-bottom: 50px;
 }
 
 /* ======================================================footer======================================= */
+footer {
+  background-color: rgba(0, 0, 0, 0.818);
+  text-align: center;
+  padding-top: 20px;
+}
+footer p {
+  font-size: 25px;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 1px;
+  color: #fff;
+  padding-top: 5px;
+}
 
-footer{
-    background-color: rgba(0, 0, 0, 0.818);
-    text-align: center;
-    padding-top: 20px;
+.redes {
+  font-size: 40px;
+  letter-spacing: 20px;
+  padding-bottom: 15px;
 }
-footer p{
-    font-size: 25px;
-    font-family: 'Oswald', sans-serif;
-    letter-spacing: 1px;
-    color: #fff;
-    padding-top: 5px;
+.redes a {
+  color: #fff;
+  text-shadow: 0 0 5px black;
 }
-.redes{
-    font-size: 40px;
-    letter-spacing: 20px;
-    padding-bottom: 15px;
+.redes .w :hover {
+  color: rgb(49, 87, 11);
 }
-.redes a{
-    color:#fff;
-    text-shadow: 0 0 5px black;
+.redes .f :hover {
+  color: dodgerblue;
 }
-.redes .w:hover{
-    color:rgb(49, 87, 11) ;
+.redes .ig :hover {
+  color: coral;
 }
-.redes .f:hover{
-    color: dodgerblue;
-}
-.redes .ig:hover{
-    color: coral;
-}
-.subir{
-    height: 40px;
-    width: 40px;
-    background-color: #fff;
-    border: 4px solid rgb(49, 87, 11);
-    right: 20px;
-    bottom: 20px;
-    text-align: center;
-    font-size: 30px;
-    line-height: 40px;
-    border-radius: 50%;
-    position: fixed;
-    box-shadow: 0 0 5px ;    
+
+.subir {
+  height: 40px;
+  width: 40px;
+  background-color: #fff;
+  border: 4px solid rgb(49, 87, 11);
+  right: 20px;
+  bottom: 20px;
+  text-align: center;
+  font-size: 30px;
+  line-height: 40px;
+  border-radius: 50%;
+  position: fixed;
+  box-shadow: 0 0 5px;
 }
 
 /* ===================RESPONSIVE INDEX.HTML================================ */
-
-@media only screen and (min-width: 320px)and (max-width:479px) {
-    
-    *{
-        margin: 0;
-        padding: 0;
-    }
-    .carousel-inner img {
-        width: 100%;
-        height:280px;
-    }
-    .carousel-caption{
-        position: absolute;
-        right: 15%;
-        top:90px;
-        left: 15%;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        height: 120px;
-    }
-    .carousel-caption h3{
-        font-size: 24px;
-    }
-    .modal-dialog{
-        margin: 0;
-    }
-    .modal-body img{
-        width: 280px;
-    }
-    .table{
-        display: none;
-    }
-    .horarios h2{
-        text-align: center;
-        padding: 10px;
-        font-size: 24px;
-    }
-    .horarios p{
-        font-size: 18px;
-    }
-    .horarios2{
-        display: block;
-    }
-    .hsmobile h5{
-        font-size: 15px;
-    }
-    .hsmobile p{
-        font-size: 15px;
-    }
-/* =====================================galeria================================*/
-
-.nosotros{
-    display:block;
-    height: auto;
-}
-.nleft{
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .carousel-inner img {
     width: 100%;
-    height:230px;
+    height: 280px;
+  }
+  .carousel-caption {
+    position: absolute;
+    right: 15%;
+    top: 90px;
+    left: 15%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 120px;
+  }
+  .carousel-caption h3 {
+    font-size: 24px;
+  }
+  .modal-dialog {
+    margin: 0;
+  }
+  .modal-body img {
+    width: 280px;
+  }
+  .table {
+    display: none;
+  }
+  .horarios h2 {
+    text-align: center;
+    padding: 10px;
+    font-size: 24px;
+  }
+  .horarios p {
+    font-size: 18px;
+  }
+  .horarios2 {
+    display: block;
+  }
+  .hsmobile h5 {
+    font-size: 15px;
+  }
+  .hsmobile p {
+    font-size: 15px;
+  }
+  /* =====================================galeria================================*/
+  .nosotros {
+    display: block;
+    height: auto;
+  }
+  .nleft {
+    width: 100%;
+    height: 230px;
     background-position: center;
-}
-.nright{
+  }
+  .nright {
     width: 100%;
     height: auto;
     padding: 0;
-}
-.nright h3{
+  }
+  .nright h3 {
     font-size: 24px;
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
     margin: 0;
     margin-bottom: 0px;
     text-decoration: underline;
     padding: 10px;
-}
-.nright p{
-    text-align:center;
-    font-family:sans-serif;
+  }
+  .nright p {
+    text-align: center;
+    font-family: sans-serif;
     font-size: 20px;
     margin: 0px;
     margin-left: 0px;
     text-shadow: 0 0 3px #fff;
     padding: 10px;
     padding-bottom: 20px;
-}
-.galeria{                    
+  }
+  .galeria {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(12, 200px);
-}
-/* ==========================Mecanica=============================== */
-.fondomecanica{
+  }
+  /* ==========================Mecanica=============================== */
+  .fondomecanica {
     background-color: #fff;
     background-image: linear-gradient(rgba(195, 194, 194, 0.553), rgba(203, 196, 196, 0.485)), url(images/Raskrasil.com-motorcycles-22.png);
     background-size: cover;
-    background-position:bottom;
+    background-position: bottom;
     padding-top: 50px;
     padding-bottom: 50px;
-}
-.serv img{
+  }
+  .serv img {
     height: 200px;
     margin: 10px;
     margin-left: 30px;
     border: 3px solid rgba(255, 255, 255, 0.569);
-}
-.lista{
+  }
+  .lista {
     margin-left: 40px;
     margin-top: 20px;
-    text-shadow: 0 0 0px black ;
+    text-shadow: 0 0 0px black;
+  }
+  /* ==========================Footer=============================== */
+  footer {
+    margin: 0;
+    padding: 0;
+  }
+  footer p {
+    font-size: 20px;
+    letter-spacing: 0.5;
+    padding-bottom: 10px;
+  }
+  .redes {
+    font-size: 30px;
+    padding: 0;
+  }
 }
-/* ==========================Footer=============================== */
+@media only screen and (min-width: 480px) and (max-width: 599px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .carousel-inner img {
+    width: 100%;
+    height: 280px;
+  }
+  .table {
+    display: none;
+  }
+  .horarios2 {
+    display: block;
+  }
+  /* =====================================galeria================================*/
+  h2 {
+    font-size: 20px;
+  }
+  .nosotros {
+    display: block;
+    height: auto;
+  }
+  .nleft {
+    width: 100%;
+    height: 230px;
+    background-position: center;
+  }
+  .nright {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+  .nright h3 {
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    margin: 10px;
+    text-decoration: underline;
+  }
+  .nright p {
+    font-family: sans-serif;
+    font-size: 20px;
+    margin: 5px;
+    padding: 5px;
+  }
+  .galeria {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, 200px);
+  }
+  /* ================================================================== */
+}
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  .carousel-inner img {
+    width: 100%;
+    height: 280px;
+  }
+  .table {
+    display: none;
+  }
+  .horarios2 {
+    display: block;
+  }
+  /* =====================================galeria================================*/
+  h2 {
+    font-size: 20px;
+  }
+  .nosotros {
+    display: flex;
+  }
+  .nleft {
+    width: 50%;
+    height: 100%;
+    background-position: center;
+  }
+  .nright {
+    width: 45%;
+    height: auto;
+    padding: 10px;
+  }
+  .nright h3 {
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    margin: 15px;
+    text-decoration: underline;
+  }
+  .nright p {
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-top: 5px;
+    padding: 5px;
+  }
+  .galeria {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, 200px);
+  }
+  .item2 {
+    grid-column: 2/4;
+  }
+  .item3 {
+    grid-column: 1/3;
+  }
+  .item9 {
+    grid-column: 2/4;
+  }
+  /* ================================================================== */
+}
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  /* ================================galeria============================*/
+  h2 {
+    font-size: 20px;
+  }
+  .nright p {
+    font-family: sans-serif;
+    font-size: 20px;
+    margin: 40px 10px;
+    padding: 5px;
+  }
+  .galeria {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(7, 200px);
+  }
+  .item2 {
+    grid-column: 2/4;
+    grid-row: 1/3;
+  }
+  .item3 {
+    grid-column: 1/3;
+    grid-row: 3/5;
+  }
+  .item6 {
+    grid-row: 5/7;
+  }
+  .item10 {
+    grid-column: 2/4;
+  }
+  .item11 {
+    grid-column: 1/3;
+  }
+  /* ================================================================== */
+}
 
-    footer{
-        margin: 0;
-        padding: 0;
-    }
-    footer p{
-        font-size: 20px;
-        letter-spacing: 0.5;
-        padding-bottom: 10px;
-    }
-    .redes{
-        font-size: 30px;
-        padding: 0;
-    }
-}
-@media only screen and (min-width: 480px) and (max-width:599px) {
-    *{
-        margin: 0;
-        padding: 0;
-    }
-    .carousel-inner img {
-        width: 100%;
-        height:280px;
-    }
-    .table{
-        display: none;
-    }
-    .horarios2{
-        display: block;
-    }
-    /* =====================================galeria================================*/
-    h2{
-        font-size: 20px;
-    }
-    .nosotros{
-        display:block;
-        height: auto;
-    }
-    .nleft{
-        width: 100%;
-        height:230px;
-        background-position: center;
-    }
-    .nright{
-        width: 100%;
-        height: auto;
-        padding: 10px;
-    }
-    .nright h3{
-        text-align: center;
-        font-family: 'Oswald', sans-serif;
-        margin: 10px;
-        text-decoration: underline;
-    }
-    .nright p{
-        font-family:sans-serif;
-        font-size: 20px;
-        margin: 5px;
-        padding: 5px;
-        
-    }
-    .galeria{
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(6, 200px);
-    }
-    /* ================================================================== */
-}
-@media only screen and (min-width:600px) and (max-width:768px){
-    *{
-        margin: 0;
-        padding: 0;
-    }
-    .carousel-inner img {
-        width: 100%;
-        height:280px;
-    }
-    .table{
-        display: none;
-    }
-    .horarios2{
-        display: block;
-    }
-    /* =====================================galeria================================*/
-    h2{
-        font-size: 20px;
-    }
-    .nosotros{
-        display: flex;
-    }
-    .nleft{
-        width: 50%;
-        height: 100%;
-        background-position: center;
-    }
-    .nright{
-        width: 45%;
-        height: auto;
-        padding: 10px;
-    }
-    .nright h3{
-        text-align: center;
-        font-family: 'Oswald', sans-serif;
-        margin: 15px;
-        text-decoration: underline;
-    }
-    .nright p{
-        font-family:sans-serif;
-        font-size: 20px;
-        margin-top: 5px;
-        padding: 5px;
-        
-    }
-    .galeria{
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: repeat(5, 200px);
-    }
-    .item2{
-        grid-column: 2/4;
-    }
-    .item3{
-        grid-column: 1/3;
-    }
-    .item9{
-        grid-column: 2/4;
-    }
-    /* ================================================================== */
-}
-@media only screen and (min-width:769px) and (max-width:1023px) {
-    *{
-        margin: 0;
-        padding: 0;
-    }
-    /* ================================galeria============================*/
-    h2{
-        font-size: 20px;
-    }
-    .nright p{
-        font-family:sans-serif;
-        font-size: 20px;
-        margin: 40px 10px;
-        padding: 5px;
-        
-    }
-    .galeria{
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: repeat(7, 200px);
-    }
-    .item2{
-        grid-column: 2/4;
-        grid-row: 1/3;
-    }
-    .item3{
-        grid-column: 1/3;
-        grid-row: 3/5;
-    }
-    .item6{
-        grid-row: 5/7;
-    }
-    .item10{
-        grid-column: 2/4;
-    }
-    .item11{
-        grid-column: 1/3;
-    }
-    /* ================================================================== */
-}
+/*# sourceMappingURL=styles.css.map */
