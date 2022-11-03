@@ -207,7 +207,7 @@ tbody{
 .nright p{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
-    color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
     margin: 70px 10px;
     padding: 0 20px;
     text-align: center;
@@ -584,7 +584,6 @@ footer p{
 .nright{
     width: 100%;
     height: auto;
-    background-color: rgb(49, 87, 11, 0.290);
     padding: 0;
 }
 .nright h3{
@@ -665,17 +664,18 @@ footer p{
         font-size: 20px;
     }
     .nosotros{
-        display: flex;
+        display:block;
+        height: auto;
     }
     .nleft{
-        width: 50%;
-        height: 100%;
+        width: 100%;
+        height:230px;
         background-position: center;
     }
     .nright{
-        width: 45%;
+        width: 100%;
         height: auto;
-        background-color: rgb(49, 87, 11, 0.290);
+        padding: 10px;
     }
     .nright h3{
         text-align: center;
@@ -688,7 +688,7 @@ footer p{
         font-size: 20px;
         margin: 5px;
         padding: 5px;
-        text-shadow: 0 0 3px #fff;
+        
     }
     .galeria{
         grid-template-columns: 1fr 1fr;
@@ -726,20 +726,20 @@ footer p{
     .nright{
         width: 45%;
         height: auto;
-        background-color: rgb(49, 87, 11, 0.290);
+        padding: 10px;
     }
     .nright h3{
         text-align: center;
         font-family: 'Oswald', sans-serif;
-        margin: 10px;
+        margin: 15px;
         text-decoration: underline;
     }
     .nright p{
         font-family:sans-serif;
         font-size: 20px;
-        margin: 5px;
+        margin-top: 5px;
         padding: 5px;
-        text-shadow: 0 0 3px #fff;
+        
     }
     .galeria{
         grid-template-columns: 1fr 1fr 1fr;
@@ -765,31 +765,12 @@ footer p{
     h2{
         font-size: 20px;
     }
-    .nosotros{
-        display: flex;
-    }
-    .nleft{
-        width: 50%;
-        height: 100%;
-        background-position: center;
-    }
-    .nright{
-        width: 45%;
-        height: auto;
-        background-color: rgb(49, 87, 11, 0.290);
-    }
-    .nright h3{
-        text-align: center;
-        font-family: 'Oswald', sans-serif;
-        margin: 10px;
-        text-decoration: underline;
-    }
     .nright p{
         font-family:sans-serif;
         font-size: 20px;
-        margin: 5px;
+        margin: 40px 10px;
         padding: 5px;
-        text-shadow: 0 0 3px #fff;
+        
     }
     .galeria{
         grid-template-columns: 1fr 1fr 1fr;
