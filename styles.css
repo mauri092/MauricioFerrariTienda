@@ -31,18 +31,18 @@
 }
 
 .info {
-  height: auto;
   width: 100%;
+  height: auto;
   background-color: rgba(51, 51, 51, 0.064);
   padding-bottom: 20px;
 }
 .info h2 {
   text-align: center;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald";
   padding-top: 20px;
 }
 .info p {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana;
   text-align: center;
   padding: 20px;
   font-weight: 500;
@@ -65,14 +65,14 @@
 }
 
 .destacados-titulo h2 {
+  font-size: 30px;
   background-color: rgba(51, 51, 51, 0.164);
   text-align: center;
-  font-size: 30px;
   letter-spacing: 1px;
   text-shadow: 0 0 1px white;
   text-decoration: underline;
   font-weight: 400;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald";
   padding: 20px;
   margin: 0;
 }
@@ -96,8 +96,8 @@
 .destacados-galeria .card img {
   padding: 10px;
   cursor: pointer;
-  height: 280px;
   width: 280px;
+  height: 280px;
 }
 
 .modal-content {
@@ -172,25 +172,26 @@ tbody {
 
 /* ================================================GALERIA ===============================================  */
 .decorado {
-  text-align: center;
-  font-size: 24px;
-  font-family: "Oswald", sans-serif;
+  font-size: 24x;
   background-color: rgba(0, 0, 0, 0.363);
+  text-align: center;
+  font-family: "Oswald";
   padding: 20px;
   text-transform: uppercase;
-  text-shadow: 0 0 7px #fff;
+  text-shadow: 0 0 5px white;
   color: #000;
   margin: 0;
 }
 .decorado span {
   color: #fff;
-  text-shadow: 0 0 7px black;
+  text-shadow: 0 0 5px black;
 }
 
 .tgaleria {
-  text-align: center;
+  font-size: 30px;
   background-color: #333;
-  font-family: "Oswald", sans-serif;
+  text-align: center;
+  font-family: "Oswald";
   color: #fff;
   text-shadow: 0 0 5px black;
   letter-spacing: 1px;
@@ -209,8 +210,8 @@ tbody {
   background-image: url(images/fotocalle2.jpg);
   background-size: cover;
   background-position: center;
-  height: 100%;
   width: 100%;
+  height: 100%;
 }
 
 .nright {
@@ -221,12 +222,12 @@ tbody {
   font-size: 30px;
   text-transform: uppercase;
   text-align: center;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald";
   margin-top: 20px;
   text-decoration: underline;
 }
 .nright p {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana;
   font-size: 20px;
   color: rgb(0, 0, 0);
   margin: 70px 10px;
@@ -236,8 +237,8 @@ tbody {
 
 .galeria {
   background-color: #333;
-  height: auto;
   width: auto;
+  height: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: repeat(3, 200px);
@@ -330,7 +331,7 @@ tbody {
 /* ================================================MECANICA ===============================================  */
 .navbar {
   display: flex;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald";
 }
 
 .navbar-brand {
@@ -365,7 +366,7 @@ tbody {
   background-color: rgba(0, 0, 0, 0.5);
   text-align: center;
   margin: 5px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald";
   padding: 5px;
   padding-bottom: 10px;
 }
@@ -404,7 +405,7 @@ tbody {
 .serv p {
   padding: 20px;
   font-size: 18px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana;
 }
 
 .lista {
@@ -469,6 +470,9 @@ tbody {
 .accesorios .card {
   padding: 10px 0;
 }
+.accesorios .card img {
+  height: 250px;
+}
 
 /* ================================================CONTACTO ===============================================  */
 .jumbotron {
@@ -492,7 +496,7 @@ tbody {
   color: rgba(0, 0, 0, 0.555);
   letter-spacing: 1px;
   text-shadow: 0 0 3px #fff;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald";
 }
 
 .mensaje {
@@ -527,14 +531,26 @@ tbody {
 footer {
   background-color: rgba(0, 0, 0, 0.818);
   text-align: center;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 footer p {
   font-size: 25px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald";
   letter-spacing: 1px;
   color: #fff;
   padding-top: 5px;
+}
+
+.nav {
+  padding-bottom: 15px;
+}
+.nav li {
+  padding: 0;
+}
+.nav li a {
+  font-size: 15px;
+  letter-spacing: 1px;
+  padding-inline: 5px;
 }
 
 .redes {
@@ -554,21 +570,6 @@ footer p {
 }
 .redes .ig :hover {
   color: coral;
-}
-
-.subir {
-  height: 40px;
-  width: 40px;
-  background-color: #fff;
-  border: 4px solid rgb(49, 87, 11);
-  right: 20px;
-  bottom: 20px;
-  text-align: center;
-  font-size: 30px;
-  line-height: 40px;
-  border-radius: 50%;
-  position: fixed;
-  box-shadow: 0 0 5px;
 }
 
 /* ===================RESPONSIVE INDEX.HTML================================ */
@@ -636,7 +637,7 @@ footer p {
   }
   .nright h3 {
     font-size: 24px;
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald";
     margin: 0;
     margin-bottom: 0px;
     text-decoration: underline;
@@ -644,11 +645,11 @@ footer p {
   }
   .nright p {
     text-align: center;
-    font-family: sans-serif;
+    font-family: Verdana;
     font-size: 20px;
     margin: 0px;
     margin-left: 0px;
-    text-shadow: 0 0 3px #fff;
+    text-shadow: 0 0 5px white;
     padding: 10px;
     padding-bottom: 20px;
   }
@@ -674,7 +675,6 @@ footer p {
   .lista {
     margin-left: 40px;
     margin-top: 20px;
-    text-shadow: 0 0 0px black;
   }
   /* ==========================Footer=============================== */
   footer {
@@ -726,12 +726,12 @@ footer p {
   }
   .nright h3 {
     text-align: center;
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald";
     margin: 10px;
     text-decoration: underline;
   }
   .nright p {
-    font-family: sans-serif;
+    font-family: Verdana;
     font-size: 20px;
     margin: 5px;
     padding: 5px;
@@ -776,12 +776,12 @@ footer p {
   }
   .nright h3 {
     text-align: center;
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald";
     margin: 15px;
     text-decoration: underline;
   }
   .nright p {
-    font-family: sans-serif;
+    font-family: Verdana;
     font-size: 20px;
     margin-top: 5px;
     padding: 5px;
