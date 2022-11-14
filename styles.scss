@@ -314,7 +314,7 @@ tbody{
 .navbar-brand{
     font-size: $md;
     color: $color1;
-    text-shadow: 0 0 5px rgb(0, 0, 0);
+    text-shadow:$bshadow;
     padding: 5px;
     span{
         color: rgb(8, 152, 8);
@@ -342,6 +342,7 @@ tbody{
     font-family: $font1;
     padding: 5px;
     padding-bottom: 10px;
+    
 }
 .fondomecanica{
     background-color: #fff;
@@ -391,6 +392,8 @@ tbody{
     flex-direction: column;
     padding: 10px;
     border-radius: 5px;  
+    text-transform: uppercase;
+    font-size:$sm;
 }
 .btnmecanica{
     background-color: rgba(0, 0, 0, 0.45);
@@ -398,7 +401,6 @@ tbody{
     :hover{
         background-color: #fff;
     }
-    
 }
 
  /* ================================================REPUESTOS ===============================================  */
@@ -446,6 +448,7 @@ tbody{
 .jumbotron{
     background-image: linear-gradient(rgba(179, 175, 175, 0.407), rgba(203, 196, 196, 0.413)), url(images/rutafondo.png);
     @include img(cover, center );
+    border-radius: 0;
     h3{
         text-align: center;
         color:rgb(255, 255, 255);
