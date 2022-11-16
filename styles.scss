@@ -2,6 +2,7 @@
 $font1:'Oswald';
 $font2: Verdana;
 $color1: #fff;
+$color2: rgb(8, 152, 8);
 $color05: rgba(0, 0, 0, 0.5);
 $sm: 20px;
 $md: 30px;
@@ -28,7 +29,32 @@ $wshadow: 0 0 5px white;
 }
 
  /* ================================================INICIO ===============================================  */
-
+.navbar{
+    display: flex;
+    font-family: $font1;
+}
+.navbar-brand{
+    font-size: $md;
+    color: $color1;
+    text-shadow:$bshadow;
+    padding: 5px;
+    span{
+        color: rgb(8, 152, 8);
+    }
+}
+.navbar-toggler{
+    background-color:rgba(0, 0, 0, 0.4);
+}
+#collapsibleNavbar{
+    justify-content: flex-end;
+}
+.nav-link{
+    color: $color1 !important;
+    font-size: $sm;
+    letter-spacing: 1px;
+    margin-inline-start: 10px;
+    text-shadow: $bshadow;
+}
 .carousel-inner {
     img {
         @include dimension(100%, 100% );
@@ -115,6 +141,9 @@ $wshadow: 0 0 5px white;
             padding: 10px;
             cursor: pointer;
             @include dimension(280px, 280px);
+        }
+        .btn{
+            background-color: $color2;
         }
     }
 }
@@ -307,32 +336,6 @@ tbody{
 
  /* ================================================MECANICA ===============================================  */
 
-.navbar{
-    display: flex;
-    font-family: $font1;
-}
-.navbar-brand{
-    font-size: $md;
-    color: $color1;
-    text-shadow:$bshadow;
-    padding: 5px;
-    span{
-        color: rgb(8, 152, 8);
-    }
-}
-.navbar-toggler{
-    background-color:rgba(0, 0, 0, 0.4);
-}
-#collapsibleNavbar{
-    justify-content: flex-end;
-}
-.nav-link{
-    color: $color1 !important;
-    font-size: $sm;
-    letter-spacing: 1px;
-    margin-inline-start: 10px;
-    text-shadow: $bshadow;
-}
 .servicios{
     color: #fff;
     text-shadow:$bshadow;
@@ -414,6 +417,9 @@ tbody{
         img{
             height: 250px;
         }
+        .btn{
+            background-color: $color2;
+        }
     }
 }
 .sec1{
@@ -439,6 +445,9 @@ tbody{
         padding: 10px 0;
         img{
             height: 250px;
+        }
+        .btn{
+            background-color: $color2;
         }
     }
 }
@@ -485,7 +494,7 @@ tbody{
     margin-top: 10px;
     margin-bottom: 50px;
     width: 200px;
-    background-color: rgba(0, 0, 255, 0.801);
+    background-color:$color2;
 }
 .comentarios{
     margin-bottom: 50px;
@@ -526,17 +535,17 @@ footer{
     }
     .w{
         :hover{
-            color:rgb(49, 87, 11) ;
+            color:$color2 ;
         }
     }
     .f{
         :hover{
-            color: dodgerblue;
+            color:$color2;
         }
     }
     .ig{
         :hover{
-            color: coral;
+            color: $color2;
         }
     }
 }
